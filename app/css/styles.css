@@ -1,0 +1,170 @@
+@import "sidebar.css";
+@import "button.css";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+.layout {
+	display: flex;
+	min-height: 100vh;
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 14px 20px;
+	color: white;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: background 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+	background: #3b82f6;
+}
+
+.icon {
+	font-size: 1.3rem;
+	min-width: 25px;
+	text-align: center;
+}
+
+.label {
+	transition: opacity 0.2s;
+}
+
+/* FORM */
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/* ANIMATIONS */
+
+.fade-in {
+	animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+	.sidebar {
+		width: 80px;
+	}
+
+	.content {
+		margin-left: 80px;
+	}
+
+	.label,
+	.logo {
+		display: none;
+	}
+}
+
+.logo {
+	font-size: 1.4rem;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/* Fade Animation */
+.fade-in {
+	animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.label {
+	transition: opacity 0.2s;
+}
+
+/* CONTENT */
+.content {
+	padding: 40px;
+	flex: 1;
+	transition: margin-left 0.3s ease;
+}
+
+.content.expanded {
+	margin-left: 80px;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/* ANIMATIONS */
+.fade-in {
+	animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+	.sidebar {
+		width: 80px;
+	}
+
+	.content {
+		margin-left: 80px;
+	}
+
+	.label,
+	.logo {
+		display: none;
+	}
+}
+
+.card {
+
+	border: 1px solid #ccc;
+
+	border-radius: 8px;
+
+	padding: 1rem;
+
+	margin: 1rem 0;
+
+	background: white;
+}

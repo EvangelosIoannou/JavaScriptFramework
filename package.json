@@ -1,0 +1,11 @@
+{
+	"name": "my-framework",
+	"type": "module",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "node tools/build.js",
+		"dev": "node server/server.js",
+		"start": "node server/server.js"
+	},
+	"dependencies": {}
+}
