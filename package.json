@@ -5,7 +5,8 @@
 	"scripts": {
 		"build": "node tools/build.js",
 		"dev": "node server/server.js",
-		"start": "node server/server.js"
+		"start": "node server/server.js",
+		"test": "node --test tests"
 	},
 	"dependencies": {}
 }
